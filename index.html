@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <form id="formulario">
+        <fieldset>
+            <legend>Ingresar Guitarras</legend>
+
+            <label>Tipo:</label>
+            <select required id="tipo">
+                        <option value="1">1- Acústica</option>
+                        <option value="2">2- Eléctrica</option>
+                        <option value="3">3- Electroacústica</option>
+             </select>
+
+            <label>Cantidad:</label>
+            <input type="number" min="1" id="cantidad" required />
+
+            <input type="submit" value="Guardar" id="guardar" />
+        </fieldset>
+    </form>
+
+    <div id="contenedor">
+        <div>Guitarras acústicas</div>
+        <div id="acusticGuitarDiv">$1500</div>
+        <div>
+            <b>Total de ventas</b>
+            <div class="total" id="ventasAcusticas"> </div>
+        </div>
+    </div>
+
+    <div id="contenedor">
+        <div>Guitarras eléctricas</div>
+        <div id="electricGuitarDiv">$1500</div>
+        <div>
+            <b>Totar de ventas</b>
+            <div class="total" id="ventasElectricas"> </div>
+        </div>
+    </div>
+
+    <div id="contenedor">
+        <div>Guitarras electroacústicas</div>
+        <div id="electroacousticGuitarDiv">$1500</div>
+        <div>
+            <b>Total de ventas</b>
+            <div class="total" id="ventasElectrocusticas"> </div>
+        </div>
+    </div>
+
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
